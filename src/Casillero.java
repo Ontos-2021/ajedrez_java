@@ -11,6 +11,7 @@ public class Casillero {
     public Casillero() {
         this.vacio = true;
         this.pieza = null;
+        System.out.println("Hola! Soy un casillero!");
     }
 
     void poner_pieza(Pieza pieza) {
