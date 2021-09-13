@@ -2,16 +2,18 @@ public class Casillero {
 
     boolean vacio;
     Pieza pieza;
+    String posicion;
 
     public Casillero(boolean vacio, Pieza pieza) {
         this.vacio = vacio;
         this.pieza = pieza;
     }
 
-    public Casillero() {
+    public Casillero(String posicion) {
         this.vacio = true;
         this.pieza = null;
-        System.out.println("Hola! Soy un casillero!");
+        this.posicion = posicion;
+        System.out.println("Hola! Soy un casillero!, y mi posición es: " + this.posicion);
     }
 
     void poner_pieza(Pieza pieza) {
@@ -22,6 +24,4 @@ public class Casillero {
         this.pieza = null;
         this.vacio = true;
     }
-
-
 }
