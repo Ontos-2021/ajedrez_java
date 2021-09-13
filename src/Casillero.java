@@ -19,6 +19,7 @@ public class Casillero {
     void poner_pieza(Pieza pieza) {
         this.pieza = pieza;
         this.vacio = false;
+        System.out.println("Se acaba de poner la pieza " + pieza + " en la casilla " + this.posicion);
     }
     void sacar_pieza(Pieza pieza) {
         this.pieza = null;
