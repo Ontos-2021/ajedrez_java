@@ -45,21 +45,25 @@ public class Tablero {
         for (int i = 0; i <8; i++) {
             for (int j = 0; j <8; j++) {
                 String posicion = this.casillas[i][j].posicion;
-                //Pieza tipo_de_pieza = elegir_pieza(posicion);
-                this.casillas[i][j].poner_pieza(pieza);
+                Pieza pieza = elegir_pieza(posicion);
+                if (pieza != null) {
+                    this.casillas[i][j].poner_pieza(pieza);
+                }
             }
         }
     }
 
-    void elegir_pieza(String posicion) {
-
+    Pieza elegir_pieza(String posicion) {
+        System.out.println("Test: " + posicion);
         switch (posicion) {
 
             case "A1":
+                pieza = new Peon();
                 break;
-
+            default:
+                return null;
         }
-
+    return pieza;
     }
 
 }

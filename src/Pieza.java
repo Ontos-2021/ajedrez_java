@@ -1,4 +1,4 @@
-public class Pieza {
+public abstract class Pieza {
 
     String nombre;
 
