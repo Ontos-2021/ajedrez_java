@@ -121,12 +121,21 @@ public class Tablero {
                 pieza = new Dama(false);
                 break;
 
+            // Caballos
+
+            case "B1":
+            case "G1":
+                pieza = new Caballo(true);
+                break;
+            case "B8":
+            case "G8":
+                pieza = new Caballo(false);
+                break;
 
             default:
                 return null;
         }
 
     return pieza;
-
     }
 }

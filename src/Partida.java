@@ -6,6 +6,7 @@ public class Partida {
 
         System.out.println("Se ha creado una partida");
         this.tablero = new Tablero();
+        tablero.llenar_tablero();
 
 
     }
