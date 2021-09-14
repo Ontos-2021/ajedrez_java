@@ -57,6 +57,8 @@ public class Tablero {
 
         switch (posicion) {
 
+            // Peones
+
             case "A2":
             case "B2":
             case "C2":
@@ -79,6 +81,8 @@ public class Tablero {
                 pieza = new Peon(false);
                 break;
 
+            // Torres
+
             case "A1":
             case "H1":
                 pieza = new Torre(true);
@@ -86,6 +90,15 @@ public class Tablero {
             case "A8":
             case "H8":
                 pieza = new Torre(false);
+                break;
+
+            // Reyes
+
+            case "E1":
+                pieza = new Rey(true);
+                break;
+            case "E8":
+                pieza = new Rey(false);
                 break;
 
 
