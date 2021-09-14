@@ -54,6 +54,7 @@ public class Tablero {
     }
 
     Pieza elegir_pieza(String posicion) {
+
         switch (posicion) {
 
             case "A2":
@@ -63,38 +64,26 @@ public class Tablero {
             case "E2":
             case "F2":
             case "G2":
-                pieza = new Peon();
-                break;
-            case "A7":
-                pieza = new Peon();
-                break;
-            case "B7":
-                pieza = new Peon();
-                break;
-            case "C7":
-                pieza = new Peon();
-                break;
-            case "D7":
-                pieza = new Peon();
-                break;
-            case "E7":
-                pieza = new Peon();
-                break;
-            case "F7":
-                pieza = new Peon();
-                break;
-            case "G7":
-                pieza = new Peon();
-                break;
-            case "H7":
-                pieza = new Peon();
+            case "H2":
+                pieza = new Peon(true);
                 break;
 
+            case "A7":
+            case "B7":
+            case "C7":
+            case "D7":
+            case "E7":
+            case "F7":
+            case "G7":
+            case "H7":
+                pieza = new Peon(false);
+                break;
 
             default:
                 return null;
         }
-    return pieza;
-    }
 
+    return pieza;
+
+    }
 }

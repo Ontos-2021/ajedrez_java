@@ -1,9 +1,14 @@
 public class Peon extends Pieza{
 
-    public Peon() {
-        super();
+    public Peon(boolean es_blanca) {
+        super(es_blanca);
         nombre = "Peón";
-        System.out.println("Hola! Soy un Peón");
+        if (es_blanca) {
+            color = "blanco";
+        } else {
+            color = "negro";
+        }
+        System.out.println("Hola! Soy un Peón " + color);
 
     }
 }
