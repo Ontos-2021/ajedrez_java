@@ -8,7 +8,7 @@ public class Peon extends Pieza{
         } else {
             color = "negro";
         }
-        System.out.println("Hola! Soy un Peón " + color);
+        System.out.println("Hola! Soy un Peón " + color + "!");
 
     }
 }

@@ -79,6 +79,16 @@ public class Tablero {
                 pieza = new Peon(false);
                 break;
 
+            case "A1":
+            case "H1":
+                pieza = new Torre(true);
+                break;
+            case "A8":
+            case "H8":
+                pieza = new Torre(false);
+                break;
+
+
             default:
                 return null;
         }
