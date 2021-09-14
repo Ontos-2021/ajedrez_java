@@ -54,12 +54,43 @@ public class Tablero {
     }
 
     Pieza elegir_pieza(String posicion) {
-        System.out.println("Test: " + posicion);
         switch (posicion) {
 
-            case "A1":
+            case "A2":
+            case "B2":
+            case "C2":
+            case "D2":
+            case "E2":
+            case "F2":
+            case "G2":
                 pieza = new Peon();
                 break;
+            case "A7":
+                pieza = new Peon();
+                break;
+            case "B7":
+                pieza = new Peon();
+                break;
+            case "C7":
+                pieza = new Peon();
+                break;
+            case "D7":
+                pieza = new Peon();
+                break;
+            case "E7":
+                pieza = new Peon();
+                break;
+            case "F7":
+                pieza = new Peon();
+                break;
+            case "G7":
+                pieza = new Peon();
+                break;
+            case "H7":
+                pieza = new Peon();
+                break;
+
+
             default:
                 return null;
         }
