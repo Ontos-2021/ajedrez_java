@@ -101,6 +101,17 @@ public class Tablero {
                 pieza = new Rey(false);
                 break;
 
+            // Alfiles
+
+            case "C1":
+            case "F1":
+                pieza = new Alfil(true);
+                break;
+            case "C8":
+            case "F8":
+                pieza = new Alfil(false);
+                break;
+
 
             default:
                 return null;
