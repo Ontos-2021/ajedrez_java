@@ -112,6 +112,15 @@ public class Tablero {
                 pieza = new Alfil(false);
                 break;
 
+            // Damas
+
+            case "D1":
+                pieza = new Dama(true);
+                break;
+            case "D8":
+                pieza = new Dama(false);
+                break;
+
 
             default:
                 return null;
