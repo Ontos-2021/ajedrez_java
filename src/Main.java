@@ -4,6 +4,7 @@ public class Main {
 
         System.out.println("Hola Mundo");
         Partida partida = new Partida();
+        partida.tablero.mostrar_tablero();
 
     }
 

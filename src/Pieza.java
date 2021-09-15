@@ -11,7 +11,7 @@ public abstract class Pieza {
         } else {
             color = "negra";
         }
-        System.out.println("Hola! Soy una pieza " + color +"!");
+        // System.out.println("Hola! Soy una pieza " + color +"!");
 
     }
 }

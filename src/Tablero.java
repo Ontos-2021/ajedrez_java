@@ -138,4 +138,23 @@ public class Tablero {
 
     return pieza;
     }
+
+    public void mostrar_tablero() {
+
+        for (int i = 0; i <8; i++) {
+            for (int j = 0; j <8; j++) {
+                Casillero casilla = casillas[i][j];
+                if (casilla.pieza != null) {
+                    System.out.println("Casilla: " + casilla.posicion);
+                    System.out.println("Pieza: " + casilla.pieza.nombre + " " + casilla.pieza.color);
+                } else {
+                    System.out.println("Casilla: " + casilla.posicion);
+                    System.out.println("Pieza: El casillero está vacío");
+                }
+                System.out.println("");
+            }
+        }
+
+    }
+
 }
