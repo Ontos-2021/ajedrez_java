@@ -1,2 +1,2 @@
-# ajedrez_java
-Juego de Ajedrez escrito en Java
+# Ajedrez
+Este es un juego de Ajedrez escrito en Java
